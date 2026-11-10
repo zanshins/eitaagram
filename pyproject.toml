@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eitaagram-py"
+version = "0.1.0"
+description = "Async, typed, multi-account Eitaa client library (Telethon/Pyrogram-style API)."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["httpx[http2]>=0.27,<1.0"]
+
+[project.optional-dependencies]
+crypto = ["cryptography>=42"]
+dev = ["pytest>=8", "pytest-asyncio>=0.24", "mypy>=1.11", "ruff>=0.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+eitaagram = ["data/*.json", "py.typed"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

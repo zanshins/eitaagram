@@ -1,0 +1,35 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / build
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# PyPI tokens & secrets (خیلی مهم!)
+.pypirc
+*.pypirc
+
+# Sessions
+*.session
+*.session-journal
+
+# Custom scripts (اسکریپت‌های شخصی)
+upload.py
+test_*.py
+rw.py
+ewp.py
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
